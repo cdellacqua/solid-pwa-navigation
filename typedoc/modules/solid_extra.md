@@ -16,6 +16,7 @@
 
 ### Functions
 
+- [Failsafe](solid_extra.md#failsafe)
 - [access](solid_extra.md#access)
 - [propagateRef](solid_extra.md#propagateref)
 - [splitPropsAriaProps](solid_extra.md#splitpropsariaprops)
@@ -149,6 +150,28 @@ ___
 [src/lib/solid-extra/reactivity.ts:18](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/solid-extra/reactivity.ts#L18)
 
 ## Functions
+
+### Failsafe
+
+▸ **Failsafe**(`props`): `JSXElement`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `props` | `Object` |
+| `props.children` | `Element` |
+| `props.wrapper` | (`content`: `Accessor`<`undefined` \| ``null`` \| `string` \| `number` \| ``false``\>) => `Element` |
+
+#### Returns
+
+`JSXElement`
+
+#### Defined in
+
+[src/lib/solid-extra/failsafe.tsx:5](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/solid-extra/failsafe.tsx#L5)
+
+___
 
 ### access
 

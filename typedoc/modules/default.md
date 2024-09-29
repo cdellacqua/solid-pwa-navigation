@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[src/lib/default/StackPage.tsx:12](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/default/StackPage.tsx#L12)
+[src/lib/default/StackPage.tsx:13](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/default/StackPage.tsx#L13)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[src/lib/default/TabPage.tsx:8](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/default/TabPage.tsx#L8)
+[src/lib/default/TabPage.tsx:9](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/default/TabPage.tsx#L9)
 
 ## Variables
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-[src/lib/default/StackPage.tsx:21](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/default/StackPage.tsx#L21)
+[src/lib/default/StackPage.tsx:22](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/default/StackPage.tsx#L22)
 
 ___
 
@@ -197,4 +197,4 @@ ___
 
 #### Defined in
 
-[src/lib/default/TabPage.tsx:16](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/default/TabPage.tsx#L16)
+[src/lib/default/TabPage.tsx:17](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/default/TabPage.tsx#L17)

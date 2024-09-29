@@ -6,6 +6,7 @@
 
 ### Type Aliases
 
+- [Falsy](utils.md#falsy)
 - [MaybeArray](utils.md#maybearray)
 - [MaybePromise](utils.md#maybepromise)
 - [Rect2D](utils.md#rect2d)
@@ -32,6 +33,16 @@
 - [unpromisify](utils.md#unpromisify)
 
 ## Type Aliases
+
+### Falsy
+
+Ƭ **Falsy**: ``null`` \| `undefined` \| ``false`` \| ``0`` \| ``0`` \| ``""``
+
+#### Defined in
+
+[src/lib/utils/bool.tsx:1](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/utils/bool.tsx#L1)
+
+___
 
 ### MaybeArray
 

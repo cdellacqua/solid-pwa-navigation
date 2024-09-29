@@ -6,6 +6,9 @@
 
 ### Type Aliases
 
+- [DraggableEventPhase](gestures.md#draggableeventphase)
+- [DraggableStateMap](gestures.md#draggablestatemap)
+- [DraggableStateType](gestures.md#draggablestatetype)
 - [NarrowedMouseDownEvent](gestures.md#narrowedmousedownevent)
 - [NarrowedTouchEvent](gestures.md#narrowedtouchevent)
 - [UseDraggableParams](gestures.md#usedraggableparams)
@@ -16,6 +19,47 @@
 - [useDraggable](gestures.md#usedraggable)
 
 ## Type Aliases
+
+### DraggableEventPhase
+
+Ƭ **DraggableEventPhase**: ``"begin"`` \| ``"running"`` \| ``"end"``
+
+#### Defined in
+
+[src/lib/gestures/draggable.ts:36](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/gestures/draggable.ts#L36)
+
+___
+
+### DraggableStateMap
+
+Ƭ **DraggableStateMap**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `dragging` | { `initialCoords`: [`Vec2D`](utils.md#vec2d) ; `touchId?`: `string` \| `number`  } |
+| `dragging.initialCoords` | [`Vec2D`](utils.md#vec2d) |
+| `dragging.touchId?` | `string` \| `number` |
+| `idle` | { `initialCoords?`: `undefined` ; `touchId?`: `undefined`  } |
+| `idle.initialCoords?` | `undefined` |
+| `idle.touchId?` | `undefined` |
+
+#### Defined in
+
+[src/lib/gestures/draggable.ts:12](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/gestures/draggable.ts#L12)
+
+___
+
+### DraggableStateType
+
+Ƭ **DraggableStateType**: keyof [`DraggableStateMap`](gestures.md#draggablestatemap)
+
+#### Defined in
+
+[src/lib/gestures/draggable.ts:23](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/gestures/draggable.ts#L23)
+
+___
 
 ### NarrowedMouseDownEvent
 
@@ -30,7 +74,7 @@
 
 #### Defined in
 
-[src/lib/gestures/draggable.ts:29](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/gestures/draggable.ts#L29)
+[src/lib/gestures/draggable.ts:31](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/gestures/draggable.ts#L31)
 
 ___
 
@@ -48,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/lib/gestures/draggable.ts:23](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/gestures/draggable.ts#L23)
+[src/lib/gestures/draggable.ts:25](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/gestures/draggable.ts#L25)
 
 ___
 
@@ -62,8 +106,8 @@ ___
 | :------ | :------ |
 | `disabled?` | [`MaybeAccessor`](solid_extra.md#maybeaccessor)<`boolean`\> |
 | `draggableEl` | [`MaybeAccessor`](solid_extra.md#maybeaccessor)<`HTMLElement` \| `Window` \| `Document` \| ``null`` \| `undefined`\> |
-| `preventDefault?` | `boolean` \| (`params`: { `coords`: [`Vec2D`](utils.md#vec2d) ; `initialCoords`: [`Vec2D`](utils.md#vec2d)  }) => `boolean` |
-| `stopPropagation?` | `boolean` \| (`params`: { `coords`: [`Vec2D`](utils.md#vec2d) ; `initialCoords`: [`Vec2D`](utils.md#vec2d)  }) => `boolean` |
+| `preventDefault?` | `boolean` \| (`params`: { `coords`: [`Vec2D`](utils.md#vec2d) ; `initialCoords`: [`Vec2D`](utils.md#vec2d) ; `phase`: [`DraggableEventPhase`](gestures.md#draggableeventphase)  }) => `boolean` |
+| `stopPropagation?` | `boolean` \| (`params`: { `coords`: [`Vec2D`](utils.md#vec2d) ; `initialCoords`: [`Vec2D`](utils.md#vec2d) ; `phase`: [`DraggableEventPhase`](gestures.md#draggableeventphase)  }) => `boolean` |
 | `filter?` | (`params`: { `initialCoords`: [`Vec2D`](utils.md#vec2d)  }) => `boolean` |
 | `onDragEnd?` | (`params`: { `coords`: [`Vec2D`](utils.md#vec2d) ; `initialCoords`: [`Vec2D`](utils.md#vec2d) ; `velocity`: [`Vec2D`](utils.md#vec2d)  }) => `void` |
 | `onDragMove?` | (`params`: { `coords`: [`Vec2D`](utils.md#vec2d) ; `initialCoords`: [`Vec2D`](utils.md#vec2d) ; `velocity`: [`Vec2D`](utils.md#vec2d)  }) => `void` |
@@ -71,7 +115,7 @@ ___
 
 #### Defined in
 
-[src/lib/gestures/draggable.ts:36](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/gestures/draggable.ts#L36)
+[src/lib/gestures/draggable.ts:40](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/gestures/draggable.ts#L40)
 
 ___
 
@@ -88,7 +132,7 @@ ___
 
 #### Defined in
 
-[src/lib/gestures/draggable.ts:61](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/gestures/draggable.ts#L61)
+[src/lib/gestures/draggable.ts:65](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/gestures/draggable.ts#L65)
 
 ## Functions
 
@@ -110,4 +154,4 @@ A hook that provides event listeners for a dragging operation.
 
 #### Defined in
 
-[src/lib/gestures/draggable.ts:71](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/gestures/draggable.ts#L71)
+[src/lib/gestures/draggable.ts:75](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/gestures/draggable.ts#L75)
