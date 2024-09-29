@@ -1,3 +1,4 @@
+export * from './bool';
 export * from './collections';
 export * from './dbg';
 export * from './functions';

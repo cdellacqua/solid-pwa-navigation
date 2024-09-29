@@ -71,7 +71,7 @@ function ProductList(props: {title?: string}) {
 
 	return (
 		<StackPage title={props.title ?? 'Pick your framework'}>
-			<div class="divide-y divide-[#cacaca] border-y border-[#cacaca] relative">
+			<div class="divide-y divide-[#cacaca] border-y border-[#cacaca]">
 				<For each={products}>
 					{(product, i) => (
 						<Clickable
@@ -137,7 +137,7 @@ function ProductDetails(props: {product: Product; initialRect: Vec2D & Rect2D}) 
 				}}
 			/>
 			<StackPage
-				title="Hello"
+				title={`${props.product.name} product page`}
 				style={
 					targetRect()
 						? {}
@@ -184,8 +184,8 @@ function ProductDetails(props: {product: Product; initialRect: Vec2D & Rect2D}) 
 					</div>
 					{props.product.extendedDescription}
 					<div class="mt-10">
-						<button type="button" disabled={busy()} onClick={unpromisify(() => push(() => <Share />))}>
-							Share
+						<button type="button" disabled={busy()} onClick={unpromisify(() => push(() => <More />))}>
+							More
 						</button>
 					</div>
 				</div>
@@ -194,11 +194,10 @@ function ProductDetails(props: {product: Product; initialRect: Vec2D & Rect2D}) 
 	);
 }
 
-function Share() {
+function More() {
 	const {pop, busy} = useStackRouter();
 	return (
-		<ModalStackScreen title="Hello">
-			<strong>Share with your friends!</strong>
+		<ModalStackScreen title="More">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis iste atque suscipit, neque, obcaecati
 			perferendis recusandae harum eos repudiandae libero iusto ullam exercitationem optio officia aliquam totam dolore
 			saepe ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis iste atque suscipit, neque,
@@ -246,9 +245,9 @@ function Share() {
 			libero iusto ullam exercitationem optio officia aliquam totam dolore saepe ratione. Lorem ipsum dolor sit amet,
 			consectetur adipisicing elit. Corporis iste atque suscipit, neque, obcaecati perferendis recusandae harum eos
 			repudiandae libero iusto ullam exercitationem optio officia aliquam totam dolore saepe ratione.
-			<div class="mt-10">
+			<div class="mt-10 pb-2">
 				<button type="button" disabled={busy()} onClick={unpromisify(() => pop({count: 2}))}>
-					Home
+					Back Home
 				</button>
 			</div>
 		</ModalStackScreen>
@@ -317,7 +316,7 @@ function App() {
 								/>
 								<div class="relative z-10 pointer-events-auto flex space-x-2 justify-center items-center rounded-full py-1 px-2">
 									<button
-										class="w-10 uppercase text-sm"
+										class="w-10 h-10 uppercase text-sm"
 										style={{
 											color: `rgb(${mapRatio(continuousTabIndex(), 0, 255)}, ${mapRatio(
 												continuousTabIndex(),

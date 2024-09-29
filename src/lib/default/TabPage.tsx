@@ -4,6 +4,7 @@ import {AnimatedTabScreen} from './AnimatedTabScreen';
 import {ScrollArea, safeAreaPaddingStyles} from '../components';
 import type {AriaAttributesProps, DataAttributesProps} from '../solid-extra';
 import {splitPropsAriaProps, splitPropsDataProps, type AppearanceProps} from '../solid-extra';
+import {Failsafe} from '../solid-extra/failsafe';
 
 export type TabPageProps = AppearanceProps &
 	DataAttributesProps &
@@ -28,13 +29,9 @@ export function TabPage(props: TabPageProps): JSXElement {
 			{...aria}
 		>
 			<Show when={props.title}>
-				<div class="shadow py-3 text-xl relative z-10" style={safeAreaPaddingStyles.horizontal}>
-					<div
-						classList={{
-							'flex items-center px-3': true,
-						}}
-					>
-						{props.title}
+				<div class="shadow py-3 text-xl" style={safeAreaPaddingStyles.horizontal}>
+					<div class="flex items-center px-3">
+						<Failsafe wrapper={(content) => <span class="truncate grow">{content()}</span>}>{props.title}</Failsafe>
 					</div>
 				</div>
 			</Show>
@@ -42,8 +39,6 @@ export function TabPage(props: TabPageProps): JSXElement {
 				class={props.scrollAreaAppearance?.class}
 				classList={props.scrollAreaAppearance?.classList}
 				style={{
-					'z-index': 0,
-					position: 'relative',
 					...safeAreaPaddingStyles.bottom,
 					...safeAreaPaddingStyles.horizontal,
 					...props.scrollAreaAppearance?.style,

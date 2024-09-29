@@ -5,7 +5,7 @@ import {useStackRouter} from '../routers';
 import {clamp, mapBetweenRanges, unpromisify} from '../utils';
 import {mapRatio} from '../utils';
 import type {AppearanceProps, AriaAttributesProps, DataAttributesProps} from '../solid-extra';
-import {splitPropsAriaProps, splitPropsDataProps, useEventListener} from '../solid-extra';
+import {Failsafe, splitPropsAriaProps, splitPropsDataProps, useEventListener} from '../solid-extra';
 import {useDraggable} from '../gestures';
 import {debounce} from '@cdellacqua/debounce';
 
@@ -102,8 +102,10 @@ export function ModalStackScreen(props: ModalStackScreenProps): JSXElement {
 							...safeAreaPaddingStyles.bottom,
 						}}
 					>
-						<div class="py-6 text-2xl relative z-10 px-3">{props.title}</div>
-						<div class="px-3">{props.children}</div>
+						<div class="py-6 text-2xl flex items-center px-3">
+							<Failsafe wrapper={(content) => <span class="truncate">{content()}</span>}>{props.title}</Failsafe>
+						</div>
+						<div class="px-3 flex flex-col grow">{props.children}</div>
 					</ScrollArea>
 				</div>
 			</div>
