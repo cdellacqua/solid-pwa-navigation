@@ -19,28 +19,28 @@ const products = {
 	solid: {
 		name: 'SolidJS',
 		description: 'A declarative, efficient, and flexible JavaScript library for building user interfaces.',
-		image: '/solid.svg',
+		image: './solid.svg',
 		extendedDescription:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, rem ratione, at nulla quisquam quis ex ab dolores commodi numquam velit autem! Blanditiis, totam maiores. Dolore quia illo obcaecati autem!',
 	},
 	react: {
 		name: 'React',
 		description: 'The library for web and native user interfaces',
-		image: '/react.svg',
+		image: './react.svg',
 		extendedDescription:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, rem ratione, at nulla quisquam quis ex ab dolores commodi numquam velit autem! Blanditiis, totam maiores. Dolore quia illo obcaecati autem!',
 	},
 	svelte: {
 		name: 'Svelte',
 		description: 'Cybernetically enhanced web apps',
-		image: '/svelte.svg',
+		image: './svelte.svg',
 		extendedDescription:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, rem ratione, at nulla quisquam quis ex ab dolores commodi numquam velit autem! Blanditiis, totam maiores. Dolore quia illo obcaecati autem!',
 	},
 	angular: {
 		name: 'Angular',
 		description: 'The modern web developer’s platform',
-		image: '/angular.svg',
+		image: './angular.svg',
 		extendedDescription:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, rem ratione, at nulla quisquam quis ex ab dolores commodi numquam velit autem! Blanditiis, totam maiores. Dolore quia illo obcaecati autem!',
 	},
