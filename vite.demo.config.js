@@ -5,8 +5,8 @@ export default defineConfig({
 	plugins: [solidPlugin()],
 	server: {
 		port: 3000,
-		base: '/solid-pwa-navigation/',
 	},
+	base: '/solid-pwa-navigation/',
 	build: {
 		outDir: 'docs',
 	},
