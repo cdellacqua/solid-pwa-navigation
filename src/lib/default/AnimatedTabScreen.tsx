@@ -10,6 +10,7 @@ import {
 	type DataAttributesProps,
 } from '../solid-extra';
 import {useDraggable} from '../gestures';
+import {draggableAreaSize} from './thresholds';
 
 export type AnimatedTabScreenProps = AppearanceProps &
 	DataAttributesProps &
@@ -17,6 +18,8 @@ export type AnimatedTabScreenProps = AppearanceProps &
 		children: JSXElement;
 		/** @default true */
 		draggable?: boolean;
+		/** @default draggableAreaSize */
+		draggableAreaSize?: number;
 	};
 
 export function AnimatedTabScreen(props: AnimatedTabScreenProps): JSXElement {
@@ -41,7 +44,10 @@ export function AnimatedTabScreen(props: AnimatedTabScreenProps): JSXElement {
 		draggableEl: screenRef,
 		disabled,
 		filter({initialCoords}) {
-			return initialCoords.x <= 10 || initialCoords.x >= window.innerWidth - 10;
+			return (
+				initialCoords.x <= (props.draggableAreaSize ?? draggableAreaSize) ||
+				initialCoords.x >= window.innerWidth - (props.draggableAreaSize ?? draggableAreaSize)
+			);
 		},
 		onDragMove({initialCoords, coords}) {
 			setOutRatio(clamp(mapBetweenRanges(coords.x - initialCoords.x, 0, window.innerWidth, 0, 1), -1, 1));

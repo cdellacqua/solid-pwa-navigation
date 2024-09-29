@@ -1,2 +1,2 @@
-export * from './context';
 export * from './StackRouter';
+export * from './context';

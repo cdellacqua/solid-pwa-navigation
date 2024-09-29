@@ -5,6 +5,7 @@ import {useStackRouter} from '../routers';
 import type {AriaAttributesProps, DataAttributesProps} from '../solid-extra';
 import {splitPropsAriaProps, splitPropsDataProps, type AppearanceProps} from '../solid-extra';
 import {useDraggable} from '../gestures';
+import {draggableAreaSize} from './thresholds';
 
 export type AnimatedStackScreenProps = AppearanceProps &
 	DataAttributesProps &
@@ -13,6 +14,8 @@ export type AnimatedStackScreenProps = AppearanceProps &
 		outro?: 'translateX' | 'translateZ';
 		/** @default true */
 		draggable?: boolean;
+		/** @default draggableAreaSize */
+		draggableAreaSize?: number;
 	};
 
 export function AnimatedStackScreen(props: AnimatedStackScreenProps): JSXElement {
@@ -40,7 +43,7 @@ export function AnimatedStackScreen(props: AnimatedStackScreenProps): JSXElement
 		draggableEl: screenRef,
 		disabled,
 		filter({initialCoords}) {
-			return initialCoords.x <= 10;
+			return initialCoords.x <= (props.draggableAreaSize ?? draggableAreaSize);
 		},
 		onDragMove({initialCoords, coords}) {
 			setOutRatio(clamp(mapBetweenRanges(coords.x - initialCoords.x, 0, window.innerWidth, 0, 1), 0, 1));
