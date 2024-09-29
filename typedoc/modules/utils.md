@@ -45,7 +45,7 @@
 
 #### Defined in
 
-[src/lib/utils/collections.ts:1](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/utils/collections.ts#L1)
+[src/lib/utils/collections.ts:1](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/utils/collections.ts#L1)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[src/lib/utils/promise.ts:1](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/utils/promise.ts#L1)
+[src/lib/utils/promise.ts:1](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/utils/promise.ts#L1)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[src/lib/utils/math.ts:24](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/utils/math.ts#L24)
+[src/lib/utils/math.ts:24](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/utils/math.ts#L24)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[src/lib/utils/math.ts:19](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/utils/math.ts#L19)
+[src/lib/utils/math.ts:19](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/utils/math.ts#L19)
 
 ## Variables
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/lib/utils/math.ts:29](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/utils/math.ts#L29)
+[src/lib/utils/math.ts:29](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/utils/math.ts#L29)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[src/lib/utils/collections.ts:31](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/utils/collections.ts#L31)
+[src/lib/utils/collections.ts:31](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/utils/collections.ts#L31)
 
 ## Functions
 
@@ -148,7 +148,7 @@ ___
 
 #### Defined in
 
-[src/lib/utils/collections.ts:3](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/utils/collections.ts#L3)
+[src/lib/utils/collections.ts:3](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/utils/collections.ts#L3)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[src/lib/utils/timing.ts:1](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/utils/timing.ts#L1)
+[src/lib/utils/timing.ts:1](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/utils/timing.ts#L1)
 
 ___
 
@@ -191,7 +191,7 @@ ___
 
 #### Defined in
 
-[src/lib/utils/math.ts:1](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/utils/math.ts#L1)
+[src/lib/utils/math.ts:1](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/utils/math.ts#L1)
 
 ___
 
@@ -218,7 +218,7 @@ ___
 
 #### Defined in
 
-[src/lib/utils/dbg.ts:1](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/utils/dbg.ts#L1)
+[src/lib/utils/dbg.ts:1](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/utils/dbg.ts#L1)
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-[src/lib/utils/collections.ts:7](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/utils/collections.ts#L7)
+[src/lib/utils/collections.ts:7](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/utils/collections.ts#L7)
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-[src/lib/utils/collections.ts:19](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/utils/collections.ts#L19)
+[src/lib/utils/collections.ts:19](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/utils/collections.ts#L19)
 
 ___
 
@@ -296,7 +296,7 @@ ___
 
 #### Defined in
 
-[src/lib/utils/math.ts:5](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/utils/math.ts#L5)
+[src/lib/utils/math.ts:5](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/utils/math.ts#L5)
 
 ___
 
@@ -318,7 +318,7 @@ ___
 
 #### Defined in
 
-[src/lib/utils/math.ts:15](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/utils/math.ts#L15)
+[src/lib/utils/math.ts:15](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/utils/math.ts#L15)
 
 ___
 
@@ -345,7 +345,7 @@ ___
 
 #### Defined in
 
-[src/lib/utils/functions.ts:1](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/utils/functions.ts#L1)
+[src/lib/utils/functions.ts:1](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/utils/functions.ts#L1)
 
 ___
 
@@ -365,7 +365,7 @@ ___
 
 #### Defined in
 
-[src/lib/utils/runtime.ts:1](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/utils/runtime.ts#L1)
+[src/lib/utils/runtime.ts:1](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/utils/runtime.ts#L1)
 
 ___
 
@@ -396,7 +396,7 @@ list.
 
 #### Defined in
 
-[src/lib/utils/objects.ts:7](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/utils/objects.ts#L7)
+[src/lib/utils/objects.ts:7](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/utils/objects.ts#L7)
 
 ___
 
@@ -434,4 +434,4 @@ ___
 
 #### Defined in
 
-[src/lib/utils/promise.ts:3](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/utils/promise.ts#L3)
+[src/lib/utils/promise.ts:3](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/utils/promise.ts#L3)

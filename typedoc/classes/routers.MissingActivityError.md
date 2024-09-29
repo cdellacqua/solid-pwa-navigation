@@ -47,7 +47,7 @@ Error.constructor
 
 #### Defined in
 
-[src/lib/routers/stack/StackRouter.tsx:27](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/stack/StackRouter.tsx#L27)
+[src/lib/routers/stack/StackRouter.tsx:27](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/stack/StackRouter.tsx#L27)
 
 ## Properties
 

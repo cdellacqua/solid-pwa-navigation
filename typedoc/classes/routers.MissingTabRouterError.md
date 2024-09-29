@@ -41,7 +41,7 @@ Error.constructor
 
 #### Defined in
 
-[src/lib/routers/tab/TabRouter.tsx:23](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/tab/TabRouter.tsx#L23)
+[src/lib/routers/tab/TabRouter.tsx:25](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/tab/TabRouter.tsx#L25)
 
 ## Properties
 

@@ -69,7 +69,7 @@
 
 #### Defined in
 
-[src/lib/routers/activity.tsx:7](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/activity.tsx#L7)
+[src/lib/routers/activity.ts:7](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/activity.ts#L7)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[src/lib/routers/stack/context.ts:17](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/stack/context.ts#L17)
+[src/lib/routers/stack/context.ts:17](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/stack/context.ts#L17)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[src/lib/routers/tab/context.ts:19](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/tab/context.ts#L19)
+[src/lib/routers/tab/context.ts:19](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/tab/context.ts#L19)
 
 ___
 
@@ -117,17 +117,17 @@ ___
 
 #### Defined in
 
-[src/lib/routers/stack/context.ts:7](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/stack/context.ts#L7)
+[src/lib/routers/stack/context.ts:7](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/stack/context.ts#L7)
 
 ___
 
 ### StackRouterProps
 
-Ƭ **StackRouterProps**: `AppearanceProps` & { `entryPoint`: [`MaybeArray`](utils.md#maybearray)<`Component`<`void`\>\> ; `ctxRef?`: (`ctx`: [`StackRouterContextContent`](routers.md#stackroutercontextcontent)) => `void`  }
+Ƭ **StackRouterProps**: [`AppearanceProps`](solid_extra.md#appearanceprops) & [`DataAttributesProps`](solid_extra.md#dataattributesprops) & [`AriaAttributesProps`](solid_extra.md#ariaattributesprops) & { `entryPoint`: [`MaybeArray`](utils.md#maybearray)<`Component`<`void`\>\> ; `ctxRef?`: (`ctx`: [`StackRouterContextContent`](routers.md#stackroutercontextcontent)) => `void`  }
 
 #### Defined in
 
-[src/lib/routers/stack/StackRouter.tsx:32](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/stack/StackRouter.tsx#L32)
+[src/lib/routers/stack/StackRouter.tsx:32](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/stack/StackRouter.tsx#L32)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[src/lib/routers/tab/context.ts:6](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/tab/context.ts#L6)
+[src/lib/routers/tab/context.ts:6](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/tab/context.ts#L6)
 
 ___
 
@@ -174,13 +174,13 @@ ___
 
 #### Defined in
 
-[src/lib/routers/tab/context.ts:8](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/tab/context.ts#L8)
+[src/lib/routers/tab/context.ts:8](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/tab/context.ts#L8)
 
 ___
 
 ### TabRouterProps
 
-Ƭ **TabRouterProps**<`Tabs`\>: `AppearanceProps` & { `initialTab`: keyof `Tabs` & `string` ; `tabs`: `Tabs` ; `ctxRef?`: (`ctx`: [`TabRouterContextContent`](routers.md#tabroutercontextcontent)<keyof `Tabs` & `string`\>) => `void`  }
+Ƭ **TabRouterProps**<`Tabs`\>: [`AppearanceProps`](solid_extra.md#appearanceprops) & [`DataAttributesProps`](solid_extra.md#dataattributesprops) & [`AriaAttributesProps`](solid_extra.md#ariaattributesprops) & { `initialTab`: keyof `Tabs` & `string` ; `tabs`: `Tabs` ; `ctxRef?`: (`ctx`: [`TabRouterContextContent`](routers.md#tabroutercontextcontent)<keyof `Tabs` & `string`\>) => `void`  }
 
 #### Type parameters
 
@@ -190,7 +190,7 @@ ___
 
 #### Defined in
 
-[src/lib/routers/tab/TabRouter.tsx:16](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/tab/TabRouter.tsx#L16)
+[src/lib/routers/tab/TabRouter.tsx:16](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/tab/TabRouter.tsx#L16)
 
 ## Variables
 
@@ -200,7 +200,7 @@ ___
 
 #### Defined in
 
-[src/lib/routers/stack/context.ts:21](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/stack/context.ts#L21)
+[src/lib/routers/stack/context.ts:21](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/stack/context.ts#L21)
 
 ___
 
@@ -210,7 +210,7 @@ ___
 
 #### Defined in
 
-[src/lib/routers/tab/context.ts:24](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/tab/context.ts#L24)
+[src/lib/routers/tab/context.ts:24](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/tab/context.ts#L24)
 
 ___
 
@@ -220,7 +220,7 @@ ___
 
 #### Defined in
 
-[src/lib/routers/stack/StackRouter.tsx:279](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/stack/StackRouter.tsx#L279)
+[src/lib/routers/stack/StackRouter.tsx:286](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/stack/StackRouter.tsx#L286)
 
 ___
 
@@ -230,7 +230,7 @@ ___
 
 #### Defined in
 
-[src/lib/routers/tab/TabRouter.tsx:290](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/tab/TabRouter.tsx#L290)
+[src/lib/routers/tab/TabRouter.tsx:296](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/tab/TabRouter.tsx#L296)
 
 ## Functions
 
@@ -250,7 +250,7 @@ ___
 
 #### Defined in
 
-[src/lib/routers/stack/StackRouter.tsx:93](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/stack/StackRouter.tsx#L93)
+[src/lib/routers/stack/StackRouter.tsx:95](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/stack/StackRouter.tsx#L95)
 
 ___
 
@@ -276,7 +276,7 @@ ___
 
 #### Defined in
 
-[src/lib/routers/tab/TabRouter.tsx:97](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/tab/TabRouter.tsx#L97)
+[src/lib/routers/tab/TabRouter.tsx:99](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/tab/TabRouter.tsx#L99)
 
 ___
 
@@ -299,7 +299,7 @@ ___
 
 #### Defined in
 
-[src/lib/routers/activity.tsx:36](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/activity.tsx#L36)
+[src/lib/routers/activity.ts:36](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/activity.ts#L36)
 
 ___
 
@@ -326,21 +326,21 @@ ___
 
 #### Defined in
 
-[src/lib/routers/activity.tsx:96](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/activity.tsx#L96)
+[src/lib/routers/activity.ts:96](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/activity.ts#L96)
 
 ___
 
 ### useStackRouter
 
-▸ **useStackRouter**(): `Omit`<[`StackRouterContextContent`](routers.md#stackroutercontextcontent), ``"setContinuousStackIndex"`` \| ``"spring$"``\> & { `activityStackIndex`: `number` ; `inRatio`: `Accessor`<`number`\> ; `isActive`: `Accessor`<`boolean`\> ; `outRatio`: `Accessor`<`number`\> ; `setOutRatio`: `SimpleSetter`<`number`\> ; `resetOutRatio`: () => `Promise`<`void`\>  }
+▸ **useStackRouter**(): `Omit`<[`StackRouterContextContent`](routers.md#stackroutercontextcontent), ``"setContinuousStackIndex"`` \| ``"spring$"``\> & { `activityStackIndex`: `number` ; `inRatio`: `Accessor`<`number`\> ; `isActive`: `Accessor`<`boolean`\> ; `outRatio`: `Accessor`<`number`\> ; `setOutRatio`: [`SimpleSetter`](solid_extra.md#simplesetter)<`number`\> ; `resetOutRatio`: () => `Promise`<`void`\>  }
 
 #### Returns
 
-`Omit`<[`StackRouterContextContent`](routers.md#stackroutercontextcontent), ``"setContinuousStackIndex"`` \| ``"spring$"``\> & { `activityStackIndex`: `number` ; `inRatio`: `Accessor`<`number`\> ; `isActive`: `Accessor`<`boolean`\> ; `outRatio`: `Accessor`<`number`\> ; `setOutRatio`: `SimpleSetter`<`number`\> ; `resetOutRatio`: () => `Promise`<`void`\>  }
+`Omit`<[`StackRouterContextContent`](routers.md#stackroutercontextcontent), ``"setContinuousStackIndex"`` \| ``"spring$"``\> & { `activityStackIndex`: `number` ; `inRatio`: `Accessor`<`number`\> ; `isActive`: `Accessor`<`boolean`\> ; `outRatio`: `Accessor`<`number`\> ; `setOutRatio`: [`SimpleSetter`](solid_extra.md#simplesetter)<`number`\> ; `resetOutRatio`: () => `Promise`<`void`\>  }
 
 #### Defined in
 
-[src/lib/routers/stack/StackRouter.tsx:37](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/stack/StackRouter.tsx#L37)
+[src/lib/routers/stack/StackRouter.tsx:39](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/stack/StackRouter.tsx#L39)
 
 ___
 
@@ -360,7 +360,7 @@ ___
 
 #### Defined in
 
-[src/lib/routers/activity.tsx:97](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/activity.tsx#L97)
+[src/lib/routers/activity.ts:97](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/activity.ts#L97)
 
 ___
 
@@ -380,7 +380,7 @@ ___
 
 #### Defined in
 
-[src/lib/routers/activity.tsx:99](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/activity.tsx#L99)
+[src/lib/routers/activity.ts:99](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/activity.ts#L99)
 
 ___
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/lib/routers/activity.tsx:98](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/activity.tsx#L98)
+[src/lib/routers/activity.ts:98](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/activity.ts#L98)
 
 ___
 
@@ -420,21 +420,21 @@ ___
 
 #### Defined in
 
-[src/lib/routers/activity.tsx:100](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/activity.tsx#L100)
+[src/lib/routers/activity.ts:100](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/activity.ts#L100)
 
 ___
 
 ### useTabRouter
 
-▸ **useTabRouter**(): `Omit`<[`TabRouterContextContent`](routers.md#tabroutercontextcontent)<`string`\>, ``"setContinuousTabIndex"`` \| ``"spring$"``\> & { `activityTabIndex`: `Accessor`<`number`\> ; `inRatio`: `Accessor`<`number`\> ; `isActive`: `Accessor`<`boolean`\> ; `outRatio`: `Accessor`<`number`\> ; `setOutRatio`: `SimpleSetter`<`number`\> ; `resetOutRatio`: () => `Promise`<`void`\>  }
+▸ **useTabRouter**(): `Omit`<[`TabRouterContextContent`](routers.md#tabroutercontextcontent)<`string`\>, ``"setContinuousTabIndex"`` \| ``"spring$"``\> & { `activityTabIndex`: `Accessor`<`number`\> ; `inRatio`: `Accessor`<`number`\> ; `isActive`: `Accessor`<`boolean`\> ; `outRatio`: `Accessor`<`number`\> ; `setOutRatio`: [`SimpleSetter`](solid_extra.md#simplesetter)<`number`\> ; `resetOutRatio`: () => `Promise`<`void`\>  }
 
 #### Returns
 
-`Omit`<[`TabRouterContextContent`](routers.md#tabroutercontextcontent)<`string`\>, ``"setContinuousTabIndex"`` \| ``"spring$"``\> & { `activityTabIndex`: `Accessor`<`number`\> ; `inRatio`: `Accessor`<`number`\> ; `isActive`: `Accessor`<`boolean`\> ; `outRatio`: `Accessor`<`number`\> ; `setOutRatio`: `SimpleSetter`<`number`\> ; `resetOutRatio`: () => `Promise`<`void`\>  }
+`Omit`<[`TabRouterContextContent`](routers.md#tabroutercontextcontent)<`string`\>, ``"setContinuousTabIndex"`` \| ``"spring$"``\> & { `activityTabIndex`: `Accessor`<`number`\> ; `inRatio`: `Accessor`<`number`\> ; `isActive`: `Accessor`<`boolean`\> ; `outRatio`: `Accessor`<`number`\> ; `setOutRatio`: [`SimpleSetter`](solid_extra.md#simplesetter)<`number`\> ; `resetOutRatio`: () => `Promise`<`void`\>  }
 
 #### Defined in
 
-[src/lib/routers/tab/TabRouter.tsx:28](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/tab/TabRouter.tsx#L28)
+[src/lib/routers/tab/TabRouter.tsx:30](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/tab/TabRouter.tsx#L30)
 
 ___
 
@@ -454,7 +454,7 @@ ___
 
 #### Defined in
 
-[src/lib/routers/activity.tsx:97](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/activity.tsx#L97)
+[src/lib/routers/activity.ts:97](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/activity.ts#L97)
 
 ___
 
@@ -474,7 +474,7 @@ ___
 
 #### Defined in
 
-[src/lib/routers/activity.tsx:99](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/activity.tsx#L99)
+[src/lib/routers/activity.ts:99](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/activity.ts#L99)
 
 ___
 
@@ -494,7 +494,7 @@ ___
 
 #### Defined in
 
-[src/lib/routers/activity.tsx:98](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/activity.tsx#L98)
+[src/lib/routers/activity.ts:98](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/activity.ts#L98)
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-[src/lib/routers/activity.tsx:100](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/routers/activity.tsx#L100)
+[src/lib/routers/activity.ts:100](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/routers/activity.ts#L100)

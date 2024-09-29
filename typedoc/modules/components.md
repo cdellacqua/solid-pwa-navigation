@@ -28,11 +28,11 @@
 
 ### ClickableProps
 
-Ƭ **ClickableProps**: `Omit`<`JSX.HTMLAttributes`<`HTMLDivElement`\>, ``"style"`` \| ``"onclick"`` \| ``"onKeyDown"`` \| ``"onkeydown"``\> & `AppearanceProps` & `RefProps`<`HTMLDivElement`\> & { `disabled?`: `boolean` ; `onClick?`: (`e`: `MouseEvent`) => `void`  }
+Ƭ **ClickableProps**: `Omit`<`JSX.HTMLAttributes`<`HTMLDivElement`\>, ``"style"`` \| ``"onclick"`` \| ``"onKeyDown"`` \| ``"onkeydown"``\> & [`AppearanceProps`](solid_extra.md#appearanceprops) & [`RefProps`](solid_extra.md#refprops)<`HTMLDivElement`\> & { `disabled?`: `boolean` ; `onClick?`: (`e`: `MouseEvent`) => `void`  }
 
 #### Defined in
 
-[src/lib/components/Clickable.tsx:4](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/components/Clickable.tsx#L4)
+[src/lib/components/Clickable.tsx:4](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/components/Clickable.tsx#L4)
 
 ___
 
@@ -42,27 +42,27 @@ ___
 
 #### Defined in
 
-[src/lib/components/SafeAreaScreen.tsx:6](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/components/SafeAreaScreen.tsx#L6)
+[src/lib/components/SafeAreaScreen.tsx:6](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/components/SafeAreaScreen.tsx#L6)
 
 ___
 
 ### ScreenProps
 
-Ƭ **ScreenProps**: `Omit`<`JSX.HTMLAttributes`<`HTMLDivElement`\>, ``"style"``\> & `AppearanceProps` & `RefProps`<`HTMLDivElement`\> & { `children?`: `JSXElement`  }
+Ƭ **ScreenProps**: `Omit`<`JSX.HTMLAttributes`<`HTMLDivElement`\>, ``"style"``\> & [`AppearanceProps`](solid_extra.md#appearanceprops) & [`RefProps`](solid_extra.md#refprops)<`HTMLDivElement`\> & { `children?`: `JSXElement`  }
 
 #### Defined in
 
-[src/lib/components/Screen.tsx:6](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/components/Screen.tsx#L6)
+[src/lib/components/Screen.tsx:6](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/components/Screen.tsx#L6)
 
 ___
 
 ### ScrollAreaProps
 
-Ƭ **ScrollAreaProps**: `AppearanceProps` & `Omit`<`JSX.HTMLAttributes`<`HTMLDivElement`\>, ``"style"``\> & `RefProps`<`HTMLDivElement`\> & { `children?`: `JSXElement` ; `direction?`: ``"horizontal"`` \| ``"vertical"``  }
+Ƭ **ScrollAreaProps**: [`AppearanceProps`](solid_extra.md#appearanceprops) & `Omit`<`JSX.HTMLAttributes`<`HTMLDivElement`\>, ``"style"``\> & [`RefProps`](solid_extra.md#refprops)<`HTMLDivElement`\> & { `children?`: `JSXElement` ; `direction?`: ``"horizontal"`` \| ``"vertical"``  }
 
 #### Defined in
 
-[src/lib/components/ScrollArea.tsx:7](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/components/ScrollArea.tsx#L7)
+[src/lib/components/ScrollArea.tsx:7](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/components/ScrollArea.tsx#L7)
 
 ## Variables
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[src/lib/components/SafeAreaScreen.tsx:8](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/components/SafeAreaScreen.tsx#L8)
+[src/lib/components/SafeAreaScreen.tsx:8](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/components/SafeAreaScreen.tsx#L8)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[src/lib/components/SafeAreaScreen.tsx:15](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/components/SafeAreaScreen.tsx#L15)
+[src/lib/components/SafeAreaScreen.tsx:15](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/components/SafeAreaScreen.tsx#L15)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[src/lib/components/Screen.tsx:12](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/components/Screen.tsx#L12)
+[src/lib/components/Screen.tsx:12](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/components/Screen.tsx#L12)
 
 ## Functions
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[src/lib/components/Clickable.tsx:11](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/components/Clickable.tsx#L11)
+[src/lib/components/Clickable.tsx:11](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/components/Clickable.tsx#L11)
 
 ___
 
@@ -165,7 +165,7 @@ ___
 
 #### Defined in
 
-[src/lib/components/SafeAreaScreen.tsx:44](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/components/SafeAreaScreen.tsx#L44)
+[src/lib/components/SafeAreaScreen.tsx:44](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/components/SafeAreaScreen.tsx#L44)
 
 ___
 
@@ -185,7 +185,7 @@ ___
 
 #### Defined in
 
-[src/lib/components/Screen.tsx:14](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/components/Screen.tsx#L14)
+[src/lib/components/Screen.tsx:14](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/components/Screen.tsx#L14)
 
 ___
 
@@ -205,4 +205,4 @@ ___
 
 #### Defined in
 
-[src/lib/components/ScrollArea.tsx:14](https://gitlab.com/cdellacqua/solid-pwa-navigation/-/blob/main/src/lib/components/ScrollArea.tsx#L14)
+[src/lib/components/ScrollArea.tsx:14](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/components/ScrollArea.tsx#L14)
