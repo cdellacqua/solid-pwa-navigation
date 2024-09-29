@@ -22,3 +22,5 @@ To improve compatibility with modern mobile devices that have notches and other 
 a couple of utility components and objects that provide padding for the so-called "safe area", namely `<SafeAreaScreen>` and `safeAreaPaddingStyles`. This, together with `viewport-fit=cover` in the viewport meta-tag, will allow you to emulate the app experience as close as possible. You consult the demo for a fully configured example.
 
 [Check out the demo here](https://cdellacqua.github.io/solid-pwa-navigation/)
+
+[and the source code here](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/demo.tsx)
