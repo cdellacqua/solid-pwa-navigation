@@ -98,7 +98,6 @@ export function ModalStackScreen(props: ModalStackScreenProps): JSXElement {
 					<ScrollArea
 						ref={setScrollAreaEl}
 						style={{
-							'overscroll-behavior': 'none',
 							...safeAreaPaddingStyles.horizontal,
 							...safeAreaPaddingStyles.bottom,
 						}}
