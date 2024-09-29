@@ -75,7 +75,7 @@ export function buildActivity({
 		callbacks: {},
 		isActive,
 		focus: () =>
-			((container.querySelector(focusableSelector) as HTMLElement | undefined) ?? container).focus({
+			container.focus({
 				preventScroll: true,
 			}),
 		root: container,
