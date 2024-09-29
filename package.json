@@ -1,7 +1,7 @@
 {
 	"name": "solid-pwa-navigation",
 	"description": "A library that brings App-like navigation to PWAs and Web Apps",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"type": "module",
 	"author": "Carlo Dell'Acqua",
 	"license": "MIT",
