@@ -12,6 +12,10 @@
 - [StackPageProps](default.md#stackpageprops)
 - [TabPageProps](default.md#tabpageprops)
 
+### Variables
+
+- [draggableAreaSize](default.md#draggableareasize)
+
 ### Functions
 
 - [AnimatedStackScreen](default.md#animatedstackscreen)
@@ -25,21 +29,21 @@
 
 ### AnimatedStackScreenProps
 
-Ƭ **AnimatedStackScreenProps**: [`AppearanceProps`](solid_extra.md#appearanceprops) & [`DataAttributesProps`](solid_extra.md#dataattributesprops) & [`AriaAttributesProps`](solid_extra.md#ariaattributesprops) & { `children`: `JSXElement` ; `draggable?`: `boolean` ; `outro?`: ``"translateX"`` \| ``"translateZ"``  }
+Ƭ **AnimatedStackScreenProps**: [`AppearanceProps`](solid_extra.md#appearanceprops) & [`DataAttributesProps`](solid_extra.md#dataattributesprops) & [`AriaAttributesProps`](solid_extra.md#ariaattributesprops) & { `children`: `JSXElement` ; `draggable?`: `boolean` ; `draggableAreaSize?`: `number` ; `outro?`: ``"translateX"`` \| ``"translateZ"``  }
 
 #### Defined in
 
-[src/lib/default/AnimatedStackScreen.tsx:9](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/default/AnimatedStackScreen.tsx#L9)
+[src/lib/default/AnimatedStackScreen.tsx:10](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/default/AnimatedStackScreen.tsx#L10)
 
 ___
 
 ### AnimatedTabScreenProps
 
-Ƭ **AnimatedTabScreenProps**: [`AppearanceProps`](solid_extra.md#appearanceprops) & [`DataAttributesProps`](solid_extra.md#dataattributesprops) & [`AriaAttributesProps`](solid_extra.md#ariaattributesprops) & { `children`: `JSXElement` ; `draggable?`: `boolean`  }
+Ƭ **AnimatedTabScreenProps**: [`AppearanceProps`](solid_extra.md#appearanceprops) & [`DataAttributesProps`](solid_extra.md#dataattributesprops) & [`AriaAttributesProps`](solid_extra.md#ariaattributesprops) & { `children`: `JSXElement` ; `draggable?`: `boolean` ; `draggableAreaSize?`: `number`  }
 
 #### Defined in
 
-[src/lib/default/AnimatedTabScreen.tsx:14](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/default/AnimatedTabScreen.tsx#L14)
+[src/lib/default/AnimatedTabScreen.tsx:15](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/default/AnimatedTabScreen.tsx#L15)
 
 ___
 
@@ -71,6 +75,16 @@ ___
 
 [src/lib/default/TabPage.tsx:8](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/default/TabPage.tsx#L8)
 
+## Variables
+
+### draggableAreaSize
+
+• `Const` **draggableAreaSize**: ``12``
+
+#### Defined in
+
+[src/lib/default/thresholds.ts:1](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/default/thresholds.ts#L1)
+
 ## Functions
 
 ### AnimatedStackScreen
@@ -89,7 +103,7 @@ ___
 
 #### Defined in
 
-[src/lib/default/AnimatedStackScreen.tsx:18](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/default/AnimatedStackScreen.tsx#L18)
+[src/lib/default/AnimatedStackScreen.tsx:21](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/default/AnimatedStackScreen.tsx#L21)
 
 ___
 
@@ -109,7 +123,7 @@ ___
 
 #### Defined in
 
-[src/lib/default/AnimatedTabScreen.tsx:22](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/default/AnimatedTabScreen.tsx#L22)
+[src/lib/default/AnimatedTabScreen.tsx:25](https://github.com/cdellacqua/solid-pwa-navigation/blob/main/src/lib/default/AnimatedTabScreen.tsx#L25)
 
 ___
 
