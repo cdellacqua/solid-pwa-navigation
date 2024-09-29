@@ -9,16 +9,18 @@ import {useEventListener} from '../solid-extra';
 
 type NativeEventData = {preventDefault(): void; stopPropagation(): void};
 
-type DraggableIdleState = {
-	type: 'idle';
-	initialCoords?: undefined;
-	touchId?: undefined;
+export type DraggableStateMap = {
+	idle: {
+		initialCoords?: undefined;
+		touchId?: undefined;
+	};
+	dragging: {
+		initialCoords: Vec2D;
+		touchId?: string | number;
+	};
 };
-type DraggableDraggingState = {
-	type: 'dragging';
-	initialCoords: Vec2D;
-	touchId?: string | number;
-};
+
+export type DraggableStateType = keyof DraggableStateMap;
 
 export type NarrowedTouchEvent = {
 	type: string;
@@ -31,7 +33,9 @@ export type NarrowedMouseDownEvent = {
 	clientY: number;
 };
 
-type DraggableState = DraggableIdleState | DraggableDraggingState;
+export type DraggableEventPhase = 'begin' | 'running' | 'end';
+
+type DraggableState = {[K in keyof DraggableStateMap]: {type: K} & DraggableStateMap[K]}[keyof DraggableStateMap];
 
 export type UseDraggableParams = {
 	onDragEnd?(params: {initialCoords: Vec2D; coords: Vec2D; velocity: Vec2D}): void;
@@ -39,8 +43,8 @@ export type UseDraggableParams = {
 	onDragStart?(params: {initialCoords: Vec2D}): void;
 	filter?(params: {initialCoords: Vec2D}): boolean;
 	disabled?: MaybeAccessor<boolean>;
-	preventDefault?: boolean | ((params: {initialCoords: Vec2D; coords: Vec2D}) => boolean);
-	stopPropagation?: boolean | ((params: {initialCoords: Vec2D; coords: Vec2D}) => boolean);
+	preventDefault?: boolean | ((params: {initialCoords: Vec2D; coords: Vec2D; phase: DraggableEventPhase}) => boolean);
+	stopPropagation?: boolean | ((params: {initialCoords: Vec2D; coords: Vec2D; phase: DraggableEventPhase}) => boolean);
 	draggableEl: MaybeAccessor<HTMLElement | Window | Document | null | undefined>;
 };
 
@@ -82,11 +86,16 @@ export function useDraggable({
 	const [dragging, setDragging] = createSignal(false);
 	const [velocity, setVelocity] = createSignal<Vec2D>({x: 0, y: 0});
 
-	const handleEventModifiers = (e: NativeEventData, initialCoords: Vec2D, coords: Vec2D) => {
-		if (maybeCall(preventDefault, {initialCoords, coords})) {
+	const handleEventModifiers = (
+		e: NativeEventData,
+		initialCoords: Vec2D,
+		coords: Vec2D,
+		phase: DraggableEventPhase,
+	) => {
+		if (maybeCall(preventDefault, {initialCoords, coords, phase})) {
 			e.preventDefault();
 		}
-		if (maybeCall(stopPropagation, {initialCoords, coords})) {
+		if (maybeCall(stopPropagation, {initialCoords, coords, phase})) {
 			e.stopPropagation();
 		}
 	};
@@ -99,7 +108,7 @@ export function useDraggable({
 			return;
 		}
 
-		handleEventModifiers(e, coords, coords);
+		handleEventModifiers(e, coords, coords, 'begin');
 		state = {type: 'dragging', initialCoords: coords};
 		prevTranslationData = {coords, timestamp: performance.now()};
 		onDragStart?.({initialCoords: coords});
@@ -117,7 +126,7 @@ export function useDraggable({
 			),
 		);
 
-		handleEventModifiers(e, state.initialCoords, coords);
+		handleEventModifiers(e, state.initialCoords, coords, 'running');
 
 		setDragging(true);
 		onDragMove?.({
@@ -132,7 +141,7 @@ export function useDraggable({
 		}
 
 		const coords = getCoords();
-		handleEventModifiers(e, state.initialCoords, coords);
+		handleEventModifiers(e, state.initialCoords, coords, 'end');
 
 		if (prevTranslationData) {
 			const now = performance.now();
