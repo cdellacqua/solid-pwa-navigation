@@ -1,0 +1,158 @@
+{
+	"name": "solid-pwa-navigation",
+	"description": "A library that brings App-like navigation to PWAs and Web Apps",
+	"version": "1.0.0",
+	"type": "module",
+	"author": "Carlo Dell'Acqua",
+	"license": "MIT",
+	"keywords": [
+		"solid",
+		"stack",
+		"drawer",
+		"headless",
+		"tab",
+		"router",
+		"navigation"
+	],
+	"repository": {
+		"url": "git+https://github.com/cdellacqua/solid-pwa-navigation"
+	},
+	"bugs": {
+		"url": "https://github.com/cdellacqua/solid-pwa-navigation/issues"
+	},
+	"homepage": "https://github.com/cdellacqua/solid-pwa-navigation",
+	"files": [
+		"dist/**/*"
+	],
+	"typesVersions": {
+		"*": {
+			"components": [
+				"./dist/components/index.d.ts"
+			],
+			"default": [
+				"./dist/default/index.d.ts"
+			],
+			"dom": [
+				"./dist/dom/index.d.ts"
+			],
+			"gestures": [
+				"./dist/gestures/index.d.ts"
+			],
+			"navigation": [
+				"./dist/navigation/index.d.ts"
+			],
+			"routers": [
+				"./dist/routers/index.d.ts"
+			],
+			"solid-extra": [
+				"./dist/solid/index.d.ts"
+			],
+			"utils": [
+				"./dist/utils/index.d.ts"
+			]
+		}
+	},
+	"exports": {
+		"./components": {
+			"import": "./dist/components/index.js",
+			"require": "./dist/components/index.cjs"
+		},
+		"./default": {
+			"import": "./dist/default/index.js",
+			"require": "./dist/default/index.cjs"
+		},
+		"./dom": {
+			"import": "./dist/dom/index.js",
+			"require": "./dist/dom/index.cjs"
+		},
+		"./gestures": {
+			"import": "./dist/gestures/index.js",
+			"require": "./dist/gestures/index.cjs"
+		},
+		"./navigation": {
+			"import": "./dist/navigation/index.js",
+			"require": "./dist/navigation/index.cjs"
+		},
+		"./routers": {
+			"import": "./dist/routers/index.js",
+			"require": "./dist/routers/index.cjs"
+		},
+		"./solid-extra": {
+			"import": "./dist/solid-extra/index.js",
+			"require": "./dist/solid-extra/index.cjs"
+		},
+		"./utils": {
+			"import": "./dist/utils/index.js",
+			"require": "./dist/utils/index.cjs"
+		},
+		"./package.json": "./package.json",
+		"./style.css": "./dist/style.css"
+	},
+	"scripts": {
+		"coverage": "cross-env NODE_ENV=test jest --coverage",
+		"test:jest": "cross-env NODE_ENV=test jest",
+		"test": "echo 'skipping tests'",
+		"build": "vite build && tsc --project ./tsconfig.declarations.json",
+		"build:demo": "vite -c vite.demo.config.js build && tsc --project ./tsconfig.declarations.json",
+		"doc": "rimraf typedoc && typedoc",
+		"prepack": "npm run lint && npm run build && npm test && npm run doc",
+		"dev": "vite -c vite.demo.config.js",
+		"lint": "eslint --max-warnings 0 .",
+		"lint:fix": "eslint --fix .",
+		"prettier": "prettier --check .",
+		"prettier:fix": "prettier --write .",
+		"setup": "node --unhandled-rejections=strict setup.js",
+		"generate:index-recursive": "node ./scripts/generate-index-recursive.cjs",
+		"generate:index-for": "node ./scripts/generate-index-for.cjs"
+	},
+	"jest": {
+		"preset": "solid-jest/preset/browser",
+		"setupFilesAfterEnv": [
+			"<rootDir>/jest-setup.ts"
+		]
+	},
+	"devDependencies": {
+		"@babel/core": "^7.18.6",
+		"@babel/preset-env": "^7.18.10",
+		"@babel/preset-typescript": "^7.18.6",
+		"@testing-library/jest-dom": "^5.16.5",
+		"@types/async-lock": "^1.4.0",
+		"@types/jest": "^28.1.5",
+		"@types/node": "^18.0.0",
+		"@typescript-eslint/eslint-plugin": "^5.29.0",
+		"@typescript-eslint/parser": "^5.51.0",
+		"autoprefixer": "^10.4.14",
+		"babel-jest": "^28.1.3",
+		"babel-preset-jest": "^28.1.3",
+		"babel-preset-solid": "^1.4.8",
+		"cross-env": "^7.0.3",
+		"eslint": "^8.18.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-solid": "^0.12.1",
+		"jest": "^28.1.3",
+		"jest-environment-jsdom": "^28.1.3",
+		"jsdom": "^20.0.0",
+		"postcss": "^8.4.21",
+		"prettier": "^2.7.1",
+		"regenerator-runtime": "0.13.9",
+		"rimraf": "^3.0.2",
+		"solid-jest": "^0.2.0",
+		"solid-js": "^1.7.5",
+		"solid-testing-library": "^0.3.0",
+		"tailwindcss": "^3.3.1",
+		"typedoc": "^0.23.10",
+		"typedoc-plugin-markdown": "^3.13.4",
+		"typescript": "^4.9.5",
+		"vite": "^3.0.4",
+		"vite-plugin-solid": "^2.3.0"
+	},
+	"peerDependencies": {
+		"solid-js": "^1.0.0"
+	},
+	"dependencies": {
+		"@cdellacqua/debounce": "^2.1.2",
+		"@universal-stores/spring": "^4.1.3",
+		"async-lock": "^1.4.0"
+	}
+}

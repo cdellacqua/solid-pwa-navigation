@@ -1,0 +1,7 @@
+build
+docs
+coverage
+dist
+node_modules
+/vite.config.js
+/setup.js
