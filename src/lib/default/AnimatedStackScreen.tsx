@@ -24,17 +24,20 @@ export function AnimatedStackScreen(props: AnimatedStackScreenProps): JSXElement
 
 	const {continuousStackIndex, activityStackIndex, setOutRatio, inRatio, outRatio, resetOutRatio, pop, isActive, busy} =
 		useStackRouter();
+
 	const transform = () => {
 		if (continuousStackIndex() <= activityStackIndex) {
 			// Intro
 			return `translateX(${100 * (1 - inRatio())}%)`;
-		} else
+		} else {
+			const ratio = continuousStackIndex() - activityStackIndex;
 			switch (props.outro ?? 'translateX') {
 				case 'translateX':
-					return `translateX(${-100 * outRatio()}px)`;
+					return `translateX(${-100 * ratio}px)`;
 				case 'translateZ':
-					return `translateZ(${-50 * outRatio()}px) translateY(${outRatio() * 15}px) rotateX(${-outRatio() * 2}deg)`;
+					return `translateZ(${-50 * ratio}px) translateY(${ratio * 15}px) rotateX(${-ratio * 2}deg)`;
 			}
+		}
 	};
 	const [screenRef, setScreenRef] = createSignal<HTMLDivElement | null>(null);
 

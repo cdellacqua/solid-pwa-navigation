@@ -138,6 +138,7 @@ function ProductDetails(props: {product: Product; initialRect: Vec2D & Rect2D}) 
 			/>
 			<StackPage
 				title={`${props.product.name} product page`}
+				outro="translateZ"
 				style={
 					targetRect()
 						? {}
